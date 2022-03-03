@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+
+    <h1>Learning function in JS</h1>
+    <script>
+        // functions
+
+        // how to create a function
+        function sayHello() {
+            console.log("Hello , ");
+            console.log("How are you? , ");
+            console.log("What are you doing? , ");
+        }
+
+        // formal paramters are givin
+        function doSum(a,b) {
+            let c = a + b;
+            return c;
+        }
+        console.log("First Line , ");
+        console.log("Second Line , ");
+        sayHello();
+        console.log("mid of the code , ");
+        sayHello();
+
+        // Actual parameters are given
+        let s =  doSum(12 , 45);
+        console.log("sum is ", s);
+
+
+        // arrow function
+        const toCelsious=(fahrenheit)=>{
+            let result = (5/9)*(fahrenheit -32);
+            return result;
+        };
+
+        let c = toCelsious(102);
+        console.log(c);
+    </script>
+</body>
+
+</html>

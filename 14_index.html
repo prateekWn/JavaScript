@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JavaScript Common Array Operations
+    </h1>
+
+    <script>
+
+        // Array Operations
+        // .Create
+
+        let names = ["John" , "Peter" , "Robin"];
+        console.log(names);
+        console.log(names.length);
+
+        //Array access using index
+        console.log(names[0]);
+        console.log(names[1]);
+        console.log(names[2]);
+
+        // loop over an array
+        // foreach
+
+        names.forEach( function(item , index){
+            // this is function body and known as anonyamous fun
+            console.log(index , " => ", item);
+        } )
+
+        // adding and deleting at end 
+        // push and pop
+
+        // Remove and add from the beginning 
+        // .shift() and .unshift()
+        
+
+        console.log(names.indexOf("Peter"))
+
+        // Remove the element from any position
+        // splice()
+        // splice(pos,n)
+        console.log(names.splice(1,2));
+        console.log(names);
+
+        // copy an array
+        // slice()
+        let copy = names.slice();
+        // shallowcopy
+        console.log(copy);
+        console.log(names);
+
+        // --------------
+        // Dont Do This
+        // let arr
+        // arr.length()
+
+        // Do this 
+        // arr.length or String.length
+
+
+
+    </script>
+</body>
+</html>

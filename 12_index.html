@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Type conversion in JS</h1>
+
+    <script>
+        //type conversion in JS
+
+        let a = 12;
+        console.log(typeof a);
+
+        // String conversion
+        // String
+        let as = String(a);
+        console.log(as);
+        console.log(typeof as);
+
+        console.log(as.length);
+        // console.log(a.length);
+        console.log("Usinf toString-->" + a.toString());
+
+        // Numeric Conversion
+        // Number()
+
+        let value = "1234"
+        console.log("It is geting appending/concat "+value+5);
+
+        let value1 = Number(value);
+        console.log(`It is using Number()---> ${value1+5}`);
+
+        let f1 = "3462879.45645";
+        let f2 = Number(f1);
+        console.log(f2);
+        console.log(typeof f2);
+
+        // parseInt, parseFloat
+        let print = parseInt(f1);
+        console.log(print);
+        console.log(typeof print);
+
+
+        console.log(parseFloat(f1));
+
+        // undefined => Nan
+        // null => 0
+        // true => 1
+        // false =>0
+
+    </script>
+</body>
+</html>

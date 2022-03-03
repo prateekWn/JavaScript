@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Array</h1>
+    <script>
+        // Javascript array
+        // How to create array
+        // 1.
+
+        let arr = [12 , 56,11,8,90];
+        console.log(arr);
+        console.log(typeof arr);
+
+
+        // access array
+        console.log(arr[3]);
+
+        // 2. using
+
+        let names = new Array("Prateek" , "Navya" , "Ruchita");
+        console.log(names);
+        console.log(names[1]);
+
+        names.push("Tanisha");
+        console.log(names);
+        names.push("Dhruv");
+        console.log(names);
+
+        // how to find size of array
+        console.log("Size of name is -->",names.length);
+
+        // type is not fixed
+        const myDetails = ["Prateek", 6513 ,789, ["ABC" , "XYZ"]];
+        console.log(myDetails);
+        console.log(myDetails[3]);
+        console.log(myDetails[3][1]);
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Strings important functions</h1>
+
+    <script>
+
+        let s = "I love javascript";
+        console.log(s);
+
+        //1. length  - number of characters
+
+        let len = s.length;
+        console.log(len);
+
+        
+        // 1. concat()
+        let s1 = "and java";
+        // console.log(s+" "+s1);
+        let ans = s.concat(" ", s1);
+        console.log(ans)
+
+        
+        // 2. charAt(index)
+        let ch = s.charAt(5);
+        console.log(ch);
+
+
+        // 3. indexOf() tells the occurance of letter from left/first time
+        let st = s.indexOf('v');
+        console.log(st);
+
+
+        // 4. lastIndexOf()
+        let index1 = s.lastIndexOf("v");
+        console.log(index1);
+
+
+        // 5. toLowerCase()
+        console.log(s.toLowerCase());
+
+
+        // 6. toUpperCase()
+        console.log(s.toUpperCase());
+
+
+        // 7. substring(start, end)
+        console.log(s.substring(2,6));
+        console.log(s.substring(2));
+
+
+        // 8. startsWith() it is case senstive also
+        console.log(s.startsWith("I love u"));
+        console.log(s.startsWith("I love j"));
+
+
+        // 9. endsWith() it is case senstive also
+        console.log(s.endsWith("script"));
+        console.log(s.startsWith("java"));
+
+
+        // 10. split()
+        let sp = s.split(" ");
+        console.log(typeof sp);
+        console.log(sp);
+        console.log(sp[0]);
+        console.log(sp[1]);
+        console.log(sp[2]);
+
+
+        // 11. trim
+        let s2 = "             This is me        ";
+        console.log(s2.trim());
+        console.log(s2);
+        
+        
+    </script>
+</body>
+</html>

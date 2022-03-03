@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>While and do While loop and for in loop</h1>
+    <script>
+        // while loop
+        // console.log("While loop example");
+
+        // let i = 1;
+        // let b = true;
+        // while(i<=10)
+        // {
+        //     console.log(`Prateek + ${i} `);
+        //     i++;
+        //     if(i == 11){
+        //         b = false;
+        //         console.log("b is false now");
+        //     }
+        // }
+
+        console.log("For in exapmle");
+
+        let st1 = {
+            name: 'John',
+            phone: 7894561230,
+            address: 'lko',
+        }
+
+        console.log(st1);
+        console.log(typeof st1);
+
+        for(let i in st1){
+            console.log(`${i} => ${st1[i]}`);
+        }
+
+        let arr = ["ABC" , "WXR" , "KJNSD"];
+
+        for(var i in arr){
+            console.log(arr[i]);
+        }
+
+        console.log("FOR of Loop Example ");
+
+        for(var i of arr){
+            console.log(i);
+        }
+    </script>
+</body>
+</html>
